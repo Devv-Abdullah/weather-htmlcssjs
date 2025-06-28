@@ -35,7 +35,8 @@ async function getAllWeather() {
 }
 
 async function searchWeather() {
-  const input = document.getElementById("searchInput").value.trim().toLowerCase();
+  const inputEl = document.getElementById("searchInput");
+  const input = inputEl.value.trim().toLowerCase();
   const city = cities.find(c => c.name.toLowerCase() === input);
   const tbody = document.getElementById("tableBody");
   tbody.innerHTML = "";
@@ -46,6 +47,8 @@ async function searchWeather() {
   } else {
     tbody.innerHTML = `<tr><td colspan="2">Governorate not found</td></tr>`;
   }
+
+//   inputEl.value = "";
 }
 
 // تشغيل البحث عند الضغط على Enter
