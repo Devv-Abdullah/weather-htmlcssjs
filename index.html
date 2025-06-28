@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jordan Governorates Weather</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Current Weather in Jordan's Governorates</h2>
+
+    <input type="text" id="searchInput" placeholder="Enter governorate name" />
+    <button style="background-color: #007bff;" onclick="searchWeather()">Search</button>
+    <button style="background-color: rgba(255, 0, 0, 0.737);" onclick="getAllWeather()">All</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Governorate</th>
+          <th>Temperature (°C)</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
