@@ -2,7 +2,7 @@ const apiKey = "1374b3e80a3c0e958c41a5c6819970b8"; // استبدل هذا بمف
 
 const cities = [
   { name: "Amman", lat: 31.963158, lon: 35.930359 },
-  { name: "Irbid", lat: 32.55556, lon: 35.85 },
+  { name: "Irbid", lat: 32.5514, lon: 35.8515 },
   { name: "Zarqa", lat: 32.07275, lon: 36.08796 },
   { name: "Aqaba", lat: 29.52667, lon: 35.00778 },
   { name: "Jerash", lat: 32.28000, lon: 35.90000 },
@@ -36,8 +36,8 @@ async function getAllWeather() {
 
 async function searchWeather() {
   const inputEl = document.getElementById("searchInput");
-  const input = inputEl.value.trim().toLowerCase();
-  const city = cities.find(c => c.name.toLowerCase() === input);
+  const input = inputEl.value.trim().toLowerCase();// or toUpperCase()
+  const city = cities.find(c => c.name.toLowerCase() === input); // or toUpperCase()
   const tbody = document.getElementById("tableBody");
   tbody.innerHTML = "";
 
