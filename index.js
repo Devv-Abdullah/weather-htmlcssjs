@@ -48,7 +48,7 @@ async function searchWeather() {
     tbody.innerHTML = `<tr><td colspan="2">Governorate not found</td></tr>`;
   }
 
-//   inputEl.value = "";
+  inputEl.value = "";
 }
 
 // تشغيل البحث عند الضغط على Enter
